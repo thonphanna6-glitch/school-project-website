@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thon Panha Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;700&family=Kantumruy+Pro:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="cursor-glow" id="glow" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#home" aria-label="Home"><span>&lt;</span>me<span>/&gt;</span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#home" class="active">Home</a>
+    <a href="#history">School History</a>
+    <a href="#skills">Skills</a>
+    <a href="#future">Future</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="aurora" aria-hidden="true"><b></b><b></b><b></b></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot"></span> Hello, I'm Thon Panha</p>
+      <h1 class="name"><span class="split" data-split>Thon Panha</span></h1>
+      <p class="role">I am a <span class="typed" id="typed"></span><span class="caret"></span></p>
+      <p class="lead">A student from Porieng who writes web pages with HTML, CSS and JavaScript, and is working toward becoming a full-stack developer.</p>
+      <div class="cta">
+        <a class="btn primary magnet" href="#skills">See my skills</a>
+        <a class="btn ghost magnet" href="#history">My school story</a>
+      </div>
+      <ul class="stats">
+        <li><strong data-count="3">0</strong><span>Languages learning</span></li>
+        <li><strong data-count="2">0</strong><span>Schools in my story</span></li>
+        <li><strong data-count="1">0</strong><span>Big goal</span></li>
+      </ul>
+    </div>
+
+    <div class="portrait-wrap" data-tilt>
+      <div class="ring" aria-hidden="true"></div>
+      <figure class="portrait">
+        <img src="./me.jpg" alt="Portrait of Thon Panha in a black suit and blue tie">
+      </figure>
+      <span class="chip c1">HTML</span>
+      <span class="chip c2">CSS</span>
+      <span class="chip c3">JS</span>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive</span><span>Animation</span><span>Git</span><span>Node.js next</span><span>Databases next</span><span>Full-Stack goal</span>
+      <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive</span><span>Animation</span><span>Git</span><span>Node.js next</span><span>Databases next</span><span>Full-Stack goal</span>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section class="section" id="history">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">01 · Where I come from</p>
+      <h2>History of my <em>school</em></h2>
+      <p class="sub">Every developer starts somewhere. Mine starts at a red-tiled gate in Porieng.</p>
+    </header>
+
+    <div class="timeline" id="timeline">
+      <div class="line"><i id="lineFill"></i></div>
+
+      <article class="tl-item left reveal">
+        <span class="node"></span>
+        <div class="tl-card" data-tilt>
+          <img src="./school1.jpg" alt="Front gate of Porieng Primary School with an orange tiled roof" loading="lazy">
+          <div class="tl-body">
+            <span class="tag">Chapter 1 · Primary school</span>
+            <h3>Porieng Primary School</h3>
+            <p class="kh">សាលាបឋមសិក្សា ពោធិ៍រៀង</p>
+            <p>This is where my school story begins. Under the Khmer-style roof of this gate I learned to read, write and count, and I found out that I enjoy learning new things.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item right reveal">
+        <span class="node"></span>
+        <div class="tl-card" data-tilt>
+          <img src="./school2.jpg" alt="Hun Sen Porieng High School gate lit at night under a starry sky" loading="lazy">
+          <div class="tl-body">
+            <span class="tag">Chapter 2 · High school</span>
+            <h3>Hun Sen Porieng High School</h3>
+            <p class="kh">វិទ្យាល័យ ហ៊ុន សែន ពោធិ៍រៀង</p>
+            <p>A bigger school, new subjects and bigger dreams. Under the same stars that shine over this gate, I grew from a child into a student who wants to build things with technology.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="tl-item left reveal">
+        <span class="node pulse"></span>
+        <div class="tl-card text-only">
+          <div class="tl-body">
+            <span class="tag">Chapter 3 · Today</span>
+            <h3>Learning to code</h3>
+            <p>Now I build web pages with HTML, CSS and JavaScript. Each project teaches me something new, and every bug I fix makes me better.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section alt" id="skills">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">02 · What I can build</p>
+      <h2>My <em>skills</em></h2>
+      <p class="sub">The three languages every website is made from.</p>
+    </header>
+
+    <div class="skill-grid">
+      <article class="skill reveal" data-tilt style="--c:#ff8a3d">
+        <div class="meter" data-level="85">
+          <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="bar" cx="60" cy="60" r="52"/></svg>
+          <b>0%</b>
+        </div>
+        <h3>HTML</h3>
+        <p>Structure of a page: headings, forms, images, links and semantic tags.</p>
+        <ul><li>Semantic layout</li><li>Forms and inputs</li><li>Accessible markup</li></ul>
+      </article>
+
+      <article class="skill reveal" data-tilt style="--c:#5fb4ff">
+        <div class="meter" data-level="80">
+          <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="bar" cx="60" cy="60" r="52"/></svg>
+          <b>0%</b>
+        </div>
+        <h3>CSS</h3>
+        <p>Style and motion: flexbox, grid, responsive design and animations.</p>
+        <ul><li>Flexbox and Grid</li><li>Keyframe animation</li><li>Mobile-first</li></ul>
+      </article>
+
+      <article class="skill reveal" data-tilt style="--c:#ffd24a">
+        <div class="meter" data-level="70">
+          <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="bar" cx="60" cy="60" r="52"/></svg>
+          <b>0%</b>
+        </div>
+        <h3>JavaScript</h3>
+        <p>Makes pages alive: events, the DOM, arrays and small interactive apps.</p>
+        <ul><li>DOM and events</li><li>Functions and arrays</li><li>Fetch and JSON</li></ul>
+      </article>
+    </div>
+
+    <div class="terminal reveal">
+      <div class="bar-top"><i></i><i></i><i></i><span>skills.js</span></div>
+      <pre id="code" aria-label="Code sample"></pre>
+    </div>
+    <p class="note reveal">Percentages show how comfortable I feel today. They grow with every project.</p>
+  </div>
+</section>
+
+<!-- FUTURE -->
+<section class="section" id="future">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">03 · Where I'm going</p>
+      <h2>My <em>future</em></h2>
+      <p class="sub">I want to become a</p>
+    </header>
+
+    <h3 class="goal reveal"><span>Full-Stack</span> Developer</h3>
+    <p class="goal-text reveal">I want to build the part of the website people see and the part they never see: pages, servers and databases, all working together.</p>
+
+    <ol class="road" id="road">
+      <li class="reveal done"><span class="n">1</span><div><h4>HTML, CSS, JavaScript</h4><p>Build a strong front-end base. I'm here now.</p></div></li>
+      <li class="reveal"><span class="n">2</span><div><h4>Git and GitHub</h4><p>Save my work, share code and learn to collaborate.</p></div></li>
+      <li class="reveal"><span class="n">3</span><div><h4>A front-end framework</h4><p>Learn React to build bigger, faster interfaces.</p></div></li>
+      <li class="reveal"><span class="n">4</span><div><h4>Node.js and APIs</h4><p>Write the back-end that powers an app.</p></div></li>
+      <li class="reveal"><span class="n">5</span><div><h4>Databases</h4><p>Store and read data with SQL and MongoDB.</p></div></li>
+      <li class="reveal"><span class="n">6</span><div><h4>Full-stack projects</h4><p>Ship real apps from first line to deployment.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section alt" id="contact">
+  <div class="wrap contact">
+    <header class="sec-head reveal">
+      <p class="eyebrow">04 · Say hello</p>
+      <h2>Let's <em>connect</em></h2>
+      <p class="sub">Want to learn together or build something? Send me a message.</p>
+    </header>
+    <div class="links reveal">
+      <!-- CHANGE THESE LINKS -->
+      <a class="btn primary magnet" href="mailto:yourname@email.com">yourname@email.com</a>
+      <a class="btn ghost magnet" href="#">GitHub</a>
+      <a class="btn ghost magnet" href="#">Telegram</a>
+      <a class="btn ghost magnet" href="#">Facebook</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>Made with HTML, CSS and JavaScript · <span id="year"></span></p>
+  <a href="#home" class="top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
